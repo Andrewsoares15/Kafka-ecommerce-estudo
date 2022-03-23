@@ -2,6 +2,6 @@ package br.com.estudo.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
-public interface ConsumerFunction {
-    void consume(ConsumerRecord<String, String> parse);
+public interface ConsumerFunction<T> {
+    void consume(ConsumerRecord<String, T> parse);
 }
