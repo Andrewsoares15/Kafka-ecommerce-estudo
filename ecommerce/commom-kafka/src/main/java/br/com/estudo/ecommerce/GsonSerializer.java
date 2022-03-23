@@ -10,6 +10,6 @@ public class GsonSerializer<T> implements Serializer<T> {
 
     @Override
     public byte[] serialize(String s, T obj) {
-        return gson.toJson(obj).getBytes();
+        return gson.toJson(obj).getBytes(); // transforma objeto java em texto json
     }
 }
